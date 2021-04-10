@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style>
+body {
+   background: url("live.jpg") no-repeat center center fixed;;
+   
+}
+</style>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <a href="template.html"><h2>Covid <span>19</span></h2></a>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+	<div class="container">
+ 
+    <div class="sidebar">
+      <center>
+        <img src="" class="" alt="">
+        <h3 style="color:white">Hrithik</h3>
+      </center>
+      <a href="dash.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+      <a href="symptoms.html" ><i class="fas fa-cogs"></i><span>Symptoms</span></a>
+      <a href="Precautions.html"><i class="fas fa-table"></i><span>Precautions</span></a>
+      <a href="livecount.html"><i class="fas fa-th"></i><span>Live CaseCount</span></a>
+ 	 <a href="Contact.html"><i class="fas fa-info-circle"></i><span>Contact Us</span></a>    
+    </div>
+    <!--sidebar end-->
+    
+<div class="content">
+   
+	
+	<form action="getCount" method="post" >
+
+<div class="d-flex justify-content-center px-5">
+                    <div class="search"> <input type="text" class="search-input" placeholder="ENTER THE COUNTRY NAME..." name="countryName"> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+              <button type="submit">SUBMIT</button>
+                </div>
+</form>
+
+</div>
+
+
+ 
+  </body>
+</html>
+      

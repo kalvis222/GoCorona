@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+   <title>Template Dashboard</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style>
+.mySlides {display:none;}
+</style>
+</head>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <a href="template.html"><h2>Covid <span>19</span></h2></a>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+	<div >
+    <div class="sidebar">
+      <center>
+        <img src="" class="" alt="">
+        <h3 style="color:white">Hrithik</h3>
+      </center>
+      <a href="dash.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+      <a href="symptoms.html" ><i class="fas fa-cogs"></i><span>Symptoms</span></a>
+      <a href="Precautions.html"><i class="fas fa-table"></i><span>Precaution</span></a>
+      <a href="livecount.html"><i class="fas fa-th"></i><span>Live CaseCount</span></a>
+       <a href="Contact.html"><i class="fas fa-info-circle"></i><span>Contact Us</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content" style="background-color:#c4e9fe">
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="coro.jpeg" style="width:200%">
+  <img class="mySlides" src="coro2.jpeg" style="width:200%">
+  <img class="mySlides" src="aaa.jpg" style="width:200%">
+  <img class="mySlides" src="bbb.jpg" style="width:200%">
+  <img class="mySlides" src="ccc.jpg" style="width:200%">
+   <img class="mySlides" src="ddd.jpg" style="width:200%">
+</div>
+
+
+	
+    </div>
+     
+ </div>
+   
+ <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    
+  </body>
+</html>
+      
